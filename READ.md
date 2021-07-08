@@ -1,1 +1,0 @@
-This is Spyder's first git project!
