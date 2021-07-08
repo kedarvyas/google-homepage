@@ -2,15 +2,6 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    /*
-
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100vh;
-    */
 }
 
 body {
@@ -27,9 +18,10 @@ nav {
 }
 
 .lnav {
-    display: flex;
-    align-items: center;
-    margin-left: 1vh;
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    color: #222;
 }
 
 .rnav {
@@ -37,6 +29,7 @@ nav {
     align-items: center;
     float: right;
     font-size: 13px;
+    line-height: 17px;
 }
 
 ul {
@@ -72,7 +65,7 @@ li {
 }
 
 a {
-    color: rgba(0, 0, 0, 0.87);
+    color: rgba(0,0,0,0.87);
     text-decoration: none;
     margin-right: 2vh;
 }
@@ -119,7 +112,7 @@ a>svg {
   
 }
 
-.search-bar:hover {
+.searchbar:hover {
     box-shadow: 0 1px 6px rgba(32,33,36,.28);
     border-color: rgba(223,225,229,0);
 }
@@ -170,7 +163,7 @@ input:focus {
     margin: 11px 4px;
     padding: 0 16px;
     line-height: 27px;
-    height: 32px;
+    height: 34px;
     min-width: 54px;
     text-align: center;
     cursor: pointer;
@@ -185,6 +178,7 @@ input:focus {
   }
 
 input[type="submit"] {
+    /*
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     border-radius: 4px;
@@ -195,6 +189,21 @@ input[type="submit"] {
     margin: 11px 5px;
     line-height: 27px;
     height: 36px;
+    */
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: Roboto,arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
 }
 
 input[type="submit"]:hover {
@@ -209,9 +218,6 @@ input[type="submit"]:hover {
     flex-grow: 1;
 }
 
-
-/* slatt */
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -222,7 +228,7 @@ footer {
 .lfooter {
     display: flex;
     justify-content: flex-start;
-    min-width: 30%;
+    min-width: 70%;
 }
 
 .rfooter {
@@ -241,13 +247,3 @@ footer a:last-child {
     margin-right: 0;
 }
 
-@media (max-width: 632px) {
-    footer {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .search-bar {
-        max-width: 85%;
-    }
-}
