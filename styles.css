@@ -170,26 +170,14 @@ input:focus {
     user-select: none;
   }
   
-  .button-search:hover {
+.button-search:hover {
     box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
     background-color: #f8f9fa;
     border: 1px solid #dadce0;
     color: #202124;
-  }
+}
 
 input[type="submit"] {
-    /*
-    background-color: #f8f9fa;
-    border: 1px solid #f8f9fa;
-    border-radius: 4px;
-    color: #3c4043;
-    font-size: 14px;
-    font-family: arial, sans-serif;
-    padding: 0 16px;
-    margin: 11px 5px;
-    line-height: 27px;
-    height: 36px;
-    */
     background-color: #f8f9fa;
     border: 1px solid #f8f9fa;
     border-radius: 4px;
@@ -228,7 +216,7 @@ footer {
 .lfooter {
     display: flex;
     justify-content: flex-start;
-    min-width: 70%;
+    min-width: 40%;
 }
 
 .rfooter {
