@@ -6,7 +6,7 @@
 
 body {
     font-size: 14px;
-    font-family: arial,sans-serif;
+    font-family: arial, sans-serif;
 }
 
 nav {
@@ -36,8 +36,15 @@ ul {
     justify-content: space-around;
 }
 
-ul, li {
+ul,
+li {
     display: inline;
+}
+
+.pfp {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
 }
 
 .lnav a:first-child {
@@ -49,7 +56,7 @@ ul, li {
 }
 
 a {
-    color: rgba(0,0,0,0.87);
+    color: rgba(0, 0, 0, 0.87);
     text-decoration: none;
     margin-right: 2vh;
 }
@@ -58,7 +65,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.gsearch {
+.logo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,14 +83,69 @@ a:hover {
 }
 
 .search-bar:hover {
-    box-shadow: 0 1px 6px rgba(32,33,36,.28);
-    border-color: rgba(223,225,229,0);
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+    border-color: rgba(223, 225, 229, 0);
 }
 
 .search-icon {
     display: flex;
     padding-right: 13px;
 }
+
+span {
+    color: #9aa0a6;
+    fill: currentColor;
+    margin-top: 3px;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+input {
+    display: flex;
+    background-color: transparent;
+    height: 34px;
+    flex: 100%;
+    font-size: 16px;
+    border: none;
+}
+
+input:focus {
+    outline-width: 0;
+}
+
+.search-buttons {
+    display: flex;
+    padding-top: 18px;
+}
+
+input[type="submit"] {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+    padding: 0 16px;
+    margin: 11px 5px;
+    line-height: 27px;
+    height: 36px;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    border: 1px solid #dadce0;
+    background-color: #f8f9fa;
+    color: #202124;
+    cursor: pointer;
+}
+
+.space {
+    flex-grow: 1;
+}
+
 
 /* slatt */
 
