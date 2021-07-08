@@ -2,6 +2,15 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
+    /*
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    */
 }
 
 body {
@@ -41,6 +50,13 @@ li {
     display: inline;
 }
 
+.apps {
+    display: inline-block;
+    padding: 8px;
+    margin-right: 1.7vh;
+    margin-left: .5vh;
+}
+
 .pfp {
     width: 32px;
     height: 32px;
@@ -65,6 +81,13 @@ a:hover {
     text-decoration: underline;
 }
 
+a>svg {
+    color: #5f6368;
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+}
+
 .logo {
     display: flex;
     flex-direction: column;
@@ -72,7 +95,20 @@ a:hover {
     padding: 20px;
 }
 
-.search-bar {
+.logo img {
+    min-width: 172px;
+    max-height: 92px;
+    padding-top: 109px;
+}
+
+.gsearch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.searchbar {
     display: flex;
     border: 1px solid #dfe1e5;
     border-radius: 24px;
@@ -80,16 +116,18 @@ a:hover {
     width: 570px;
     align-items: center;
     padding: 0 8px 2px 16px;
+  
 }
 
 .search-bar:hover {
-    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
-    border-color: rgba(223, 225, 229, 0);
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
 }
 
 .search-icon {
-    display: flex;
-    padding-right: 13px;
+    width: 25px;
+    height: 25px;
+    margin-right: 1rem;
 }
 
 span {
@@ -118,8 +156,33 @@ input:focus {
 
 .search-buttons {
     display: flex;
-    padding-top: 18px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.4rem;
 }
+
+.button-search {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 32px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .button-search:hover {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+  }
 
 input[type="submit"] {
     background-color: #f8f9fa;
@@ -176,4 +239,15 @@ footer a {
 
 footer a:last-child {
     margin-right: 0;
+}
+
+@media (max-width: 632px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar {
+        max-width: 85%;
+    }
 }
